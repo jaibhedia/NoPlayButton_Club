@@ -199,6 +199,12 @@ a {
 }
 
 /* Blocks */
+.team {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* This will center the child elements */
+  /* Additional styling for your team section */
+}
 
 .block {
   --padding-vertical: 6rem;
@@ -596,7 +602,12 @@ a {
 .green--banner > .block__heading {
   color: white;
 }
-
+.text1 {
+  color: rgb(0, 0, 0); /* This sets the text color to dark grey */
+  text-align: center;
+  font-weight: bold; /* Makes the text bold */
+    font-size: 1.2em; 
+}
 @media screen and (min-width: 1024px) {
   .banner {
     padding: 2rem 0;
@@ -999,9 +1010,7 @@ body.dark {
 .footer-dark {
   background-color: #1d2026;
 }
-.img-white {
-  filter: brightness(0) invert(1);
-}
+
 
 .card-dark {
   background-color: #1d2026;
