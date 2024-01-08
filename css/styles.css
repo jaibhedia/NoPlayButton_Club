@@ -616,7 +616,82 @@ a {
 }
 
 /*Cards*/
+.profile__cardB {
+  background: #FFFFFF; /* Set the card background color */
+  border-radius: 15px; /* Rounded corners for the card */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Card shadow */
+  width: 250px; /* Fixed width for each card */
+  margin: 10px;
+  overflow: hidden; /* Ensures nothing spills out of the card's rounded corners */
+}
 
+.profile__container {
+    flex-basis: calc(33.333% - 40px); /* sets the base width for each card taking into account the gap */
+    box-sizing: border-box; /* includes padding and border in the element's total width and height */
+}
+
+.profile__card {
+    display: flex; /* establishes a flex container */
+    flex-direction: column; /* stacks children elements vertically */
+    align-items: center; /* centers items horizontally */
+    background: #FFFFFF; /* sets the background color to white */
+    border-radius: 10px; /* rounded corners for the card */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* shadow for the card */
+    padding: 15px; /* padding inside the card */
+    margin: 10px; /* space around each card */
+}
+
+/* Adjust the width as needed to fit your layout */
+@media (max-width: 768px) {
+    .profile__container {
+        flex-basis: calc(50% - 40px); /* for medium screens, we show 2 cards per row */
+    }
+}
+
+@media (max-width: 480px) {
+    .profile__container {
+        flex-basis: 100%; /* for small screens, we show 1 card per row */
+    }
+}
+.profile__card__headerB {
+  background: linear-gradient(135deg, #0062E0, #33AEFF); /* Gradient background for the header */
+  padding: 30px; /* Space inside the header */
+}
+
+.profile__image__containerB {
+  margin-top: -50px; /* Adjusts the profile image container to be halfway up */
+  text-align: center;
+}
+
+.profile__card__imageB {
+  width: 100px; /* Profile image size */
+  height: 100px;
+  border-radius: 50%; /* Makes the image round */
+  border: 5px solid #FFFFFF; /* White border around the image */
+  display: inline-block;
+}
+
+.card__person-nameB {
+  text-align: center;
+  margin-top: 10px; /* Space after the profile image */
+  font-weight: bold;
+}
+
+.person__positionB {
+  text-align: center;
+  color: #000000; /* Dark grey color for the text */
+}
+
+.social__mediaB{
+  text-align: center;
+  padding: 10px 0; /* Space for social media icons */
+}
+
+.social__media__iconB {
+  width: 24px; /* Adjusts the social media icons size */
+  height: 24px;
+  margin: 0 5px; /* Space between the social media icons */
+}
 .card {
   background-color: whitesmoke;
   margin: 3rem;
