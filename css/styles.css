@@ -1543,6 +1543,10 @@ a {
   background: rgba(0, 0, 0, 0.7) url(../images/red-banner.png);
   color: white;
 }
+.purple--banner {
+  background: rgba(0, 0, 0, 0.7) url(../images/purple.jpg);
+  color: white;
+}
 .yellow--banner {
   padding-top: 15px;
   background: rgba(0, 0, 0, 0.7) url(../images/yellow-banner.png);
@@ -2225,7 +2229,27 @@ body.dark {
   margin-bottom: 20px;
   border-radius: 20px;
 }
-/* --------------/she-Team Container for the cards--------------- */
+/* --------------/iot-Team Container for the cards--------------- */
+/* iot-Team Container for the cards */
+
+.iot-card {
+  position: relative;
+  box-sizing: border-box;
+  background: linear-gradient(-45deg, #7d11e3, #7e1eba, #6324b7, #6e1ea3);
+  animation: gradient 5s ease infinite;
+  background-size: 500% 500%;
+  width: 100%; /* Use percentage for responsiveness */
+  max-width: 300px; /* Set a max-width for larger screens */
+  height: auto; /* Auto-adjust height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+}
+/* --------------/iot-Team Container for the cards--------------- */
 
 @keyframes gradient {
   0% {
