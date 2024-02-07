@@ -1547,6 +1547,10 @@ a {
   background: rgba(0, 0, 0, 0.7) url(../images/purple.jpg);
   color: white;
 }
+.magenta--banner {
+  background: rgba(0, 0, 0, 0.7) url(../images/magenta.jpg);
+  color: white;
+}
 .yellow--banner {
   padding-top: 15px;
   background: rgba(0, 0, 0, 0.7) url(../images/yellow-banner.png);
@@ -2250,6 +2254,25 @@ body.dark {
   border-radius: 20px;
 }
 /* --------------/iot-Team Container for the cards--------------- */
+
+.aiml-card {
+  position: relative;
+  box-sizing: border-box;
+  background: linear-gradient(-45deg, #BE3455, #d6365b, #dd2e57, #e02a54);
+  animation: gradient 5s ease infinite;
+  background-size: 500% 500%;
+  width: 100%; /* Use percentage for responsiveness */
+  max-width: 300px; /* Set a max-width for larger screens */
+  height: auto; /* Auto-adjust height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+}
+/* --------------/aiml-Team Container for the cards--------------- */
 
 @keyframes gradient {
   0% {
